@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sapient Junior Test</title>
+  </head>
+  <header>
+    <!-- duas imagens no seguinte botão,
+    manipularia a visibilidade de um ou outro 
+    através de css e javascript -->
+    <button id="hamburguer">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="3em"
+        viewBox="0 0 448 512"
+      >
+        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="1em"
+        viewBox="0 0 384 512"
+      >
+        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path
+          d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+        />
+      </svg>
+    </button>
+    <img src="./assets/img/logo.svg" width="110px" alt="Logo" />
+    <!-- duas imagens no seguinte botão,
+    manipularia a visibilidade de um ou outro 
+    através de css e javascript -->
+    <button id="hamburguer">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="2em"
+        viewBox="0 0 512 512"
+      >
+        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path
+          d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="1em"
+        viewBox="0 0 384 512"
+      >
+        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path
+          d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+        />
+      </svg>
+    </button>
+
+    <!-- Idealmente, eu contruiria a seguinte parte em SPA ou React
+    em vez de no index.html, então esta próxima parte é só para 
+    mostrar a estrutura e semântica que eu utilizaria para 
+    construí-las -->
+
+    <nav class="menu">
+      <ul class="pages">
+        <li><a href="#">Quem Somos</a></li>
+        <li><a href="#">Trabalhe conosco</a></li>
+        <li><a href="#">Pessoas</a></li>
+        <li><a href="#">Cases</a></li>
+      </ul>
+
+      <ul class="social-media">
+        <li>
+          <a href="#"
+            ><img src="./assets/img/instagram.svg" alt="Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/img/facebook.svg" alt="Facebook" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/img/linkedin.svg" alt="LinkedIn" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/img/medium.svg" alt="Medium" /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <input type="text" placeholder="Digite o que deseja buscar">
+  </header>
+
+  <body>
+    <section class="home">
+      <h1>Olá mundo!</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer
+        <a href="#">adipiscing elit</a>, sed diam nonummy nibh euismod tincidunt
+        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+      </p>
+      <video>
+        <source class="./assets/video/video.mp4" type="video/mp4" />
+        Seu navegador não suporta a reprodução de vídeo.
+      </video>
+      <p>
+        <q>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER VOLUTPAT. UT</q>
+      </p>
+      <hr />
+    </section>
+    <section class="gallery">
+      <h2>Galeria de imagens</h2>
+      <div class="prev-next-img">
+        <div class="control prev">&#10094;</div>
+        <div class="carousel">
+          <img src="./assets/img/imagem-1.png" alt="Imagem 1" />
+        </div>
+        <div class="control next">&#10095;</div>
+      </div>
+      <div class="dots">
+        <div class="dot">&#9675;</div>
+        <div class="dot">&#9675;</div>
+        <div class="dot">&#9675;</div>
+      </div>
+      <hr />
+    </section>
+    <section class="lorem-options">
+      <details>
+        <summary>LOREM IPSUM DOLOR SIT</summary>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer erat volutpat. Ut wisi enim
+          ad minim
+        </p>
+      </details>
+      <details>
+        <summary>LOREM IPSUM DOLOR SIT</summary>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer erat volutpat. Ut wisi enim
+          ad minim
+        </p>
+      </details>
+      <details>
+        <summary>LOREM IPSUM DOLOR SIT</summary>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer erat volutpat. Ut wisi enim
+          ad minim
+        </p>
+      </details>
+      <details>
+        <summary>LOREM IPSUM DOLOR SIT</summary>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer erat volutpat. Ut wisi enim
+          ad minim
+        </p>
+      </details>
+      <details>
+        <summary>LOREM IPSUM DOLOR SIT</summary>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer erat volutpat. Ut wisi enim
+          ad minim
+        </p>
+      </details>
+      <hr />
+    </section>
+    <section class="partners">
+      <h2>Parceiros</h2>
+      <div class="partners-img">
+        <div class="control prev">&#10094;</div>
+        <div class="carousel">
+          <div class="partner-1">
+            <img src="./assets/img/imagem-1.png" alt="Imagem 1" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            </p>
+            <a href="#">Conheça mais</a>
+          </div>
+        </div>
+        <div class="control next">&#10095;</div>
+      </div>
+      <div class="dots">
+        <div class="dot">&#9675;</div>
+        <div class="dot">&#9675;</div>
+        <div class="dot">&#9675;</div>
+      </div>
+      <hr />
+    </section>
+    <section class="contact">
+      <h2>Entre em contato</h2>
+      <form action="">
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" />
+        </div>
+        <div>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      <hr />
+    </section>
+  </body>
+  <footer>
+    <div class="info">
+      <p>Av. Dr. Figueiredo Mascarenhas, 94</p>
+      <p>Tres Vendas, Pelotas - RS</p>
+      <p>96055-510</p>
+      <p>(53) 3030-3030</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Vagas</a></li>
+        <li><a href="#">Cases</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </nav>
+  </footer>
+</html>
