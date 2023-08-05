@@ -44,18 +44,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//solicitação ajax para a api da wikipedia
+//solicitação ajax para a api da catfact
 //exibir o conteúdo na div wiki
 document.addEventListener("DOMContentLoaded", function () {
   const wikiExtract = document.querySelector(".extract");
 
   fetch(
-    "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=Alber%20Einstein"
+    "https://catfact.ninja/fact"
   )
     .then((response) => response.json())
     .then((data) => {
-      const extract = data.query.pages[736].extract;
-      wikiExtract.innerHTML = extract;
+      const catFact = data.fact;
+      wikiExtract.innerHTML = catFact;
     })
     .catch((error) => {
       console.error("Error fetching Wikipedia data:", error);
